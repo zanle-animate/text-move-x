@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  overflow-x: hidden;
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: move 15s infinite linear;
+  width: 600px;
+}
+
+p {
+  color: black;
+  font-size: 2em;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.first,
+.second {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first {
+  background: #1c1c1c;
+  color: white;
+}
+
+.second {
+  background: white;
+  color: black;
+}
